@@ -1,3 +1,49 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic_latin-regular.ttf') format('truetype');
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic_latin-500.ttf') format('truetype');
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/roboto-v30-cyrillic_latin-700.ttf') format('truetype');
+}
+/* play-regular - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_latin-regular.woff2') format('woff2'),
+    url('../fonts/play-v19-cyrillic_latin-regular.ttf') format('truetype');
+}
+/* play-700 - cyrillic_latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_latin-700.woff2') format('woff2'),
+    url('../fonts/play-v19-cyrillic_latin-700.ttf') format('truetype');
+}
+
 :root {
   --color-primary-light: #ffffff;
   --color-primary-dark: #011c44;
@@ -10,15 +56,6 @@
   --color-secondary: #011f4a;
 }
 
-html {
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 ul {
   list-style: none;
 }
@@ -29,12 +66,17 @@ a {
 
 body {
   color: var(--color-primary-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: normal;
 }
 
 .link-header {
   color: var(--color-primary-dark);
-  font-size: 18px;
   font-weight: 400;
+  cursor: pointer;
+
+  font-family: inherit;
 }
 
 .link-header:hover,
@@ -45,7 +87,6 @@ body {
 }
 
 .hero-title {
-  font-size: 18px;
   font-weight: 400;
 }
 
@@ -55,6 +96,7 @@ body {
   font-weight: 700;
   line-height: 0.81;
   text-transform: capitalize;
+  font-family: 'Play', sans-serif;
 }
 
 .button {
@@ -62,12 +104,10 @@ body {
 
   background-color: var(--color-primary-accent);
   color: var(--color-primary-light);
-  font-size: 18px;
   font-weight: 600px;
 
   border-radius: 32px;
   border: 2px solid var(--color-primary-accent);
-  /* border: none; */
   cursor: pointer;
 }
 
@@ -93,6 +133,13 @@ body {
 
 .section-title .accent {
   color: var(--color-primary-accent);
+  font-family: 'Play', sans-serif;
+}
+
+.about-us-section .second-accent {
+  color: var(--color-primary-dark);
+  text-transform: capitalize;
+  font-weight: 500;
 }
 
 .toCapitalize {
@@ -106,7 +153,6 @@ body {
 
 .why-us-section p {
   color: var(--color-secondary-harddark);
-  font-size: 18px;
   font-weight: 400;
   line-height: 1.33;
 }
@@ -118,13 +164,26 @@ body {
   line-height: 1.18;
 }
 
-footer a {
+.link-footer {
   color: var(--color-primary-light);
   font-size: 16px;
   font-weight: 400;
+  font-family: inherit;
 }
+
+.link-footer:hover,
+.link-footer:focus,
+.link-footer:active {
+  font-weight: 700;
+  color: var(--color-primary-accent);
+}
+
 footer p {
   color: var(--color-secondary-light);
   font-size: 13px;
   font-weight: 400;
+}
+
+.address {
+  font-style: normal;
 }
