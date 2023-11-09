@@ -1,0 +1,130 @@
+:root {
+  --color-primary-light: #ffffff;
+  --color-primary-dark: #011c44;
+  --color-primary-accent: #2b7fff;
+
+  --color-secondary-harddark: #000;
+  --color-secondary-light: #747272;
+  --color-secondary-dark: #4a4a4a;
+  --color-secondary-accent: #ffd02b;
+  --color-secondary: #011f4a;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--color-primary-dark);
+}
+
+.link-header {
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.link-header:hover,
+.link-header:focus,
+.link-header:active {
+  font-weight: 700;
+  color: var(--color-primary-accent);
+}
+
+.hero-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero-title .accent {
+  color: var(--color-primary-accent);
+  font-size: 140px;
+  font-weight: 700;
+  line-height: 0.81;
+  text-transform: capitalize;
+}
+
+.button {
+  padding: 16px 32px;
+
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-light);
+  font-size: 18px;
+  font-weight: 600px;
+
+  border-radius: 32px;
+  border: 2px solid var(--color-primary-accent);
+  /* border: none; */
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: transparent;
+  border: 2px solid var(--color-primary-accent);
+  color: var(--color-primary-dark);
+  padding: 16px 32px;
+}
+
+.hero-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-title {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+.section-title .accent {
+  color: var(--color-primary-accent);
+}
+
+.toCapitalize {
+  text-transform: capitalize;
+}
+.about-us-section p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.72;
+}
+
+.why-us-section p {
+  color: var(--color-secondary-harddark);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.33;
+}
+
+.our-work-section h3 {
+  color: var(--color-primary-light);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+footer a {
+  color: var(--color-primary-light);
+  font-size: 16px;
+  font-weight: 400;
+}
+footer p {
+  color: var(--color-secondary-light);
+  font-size: 13px;
+  font-weight: 400;
+}
